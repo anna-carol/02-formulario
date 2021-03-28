@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head  lang="pt-br">
+        <meta charset="utf-8">
+        <title>inscreva-se</title>
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #ffffff url("imagem/title.png") no-repeat right top fixed; /* #ffde59;
+            background-image: linear-gradient(#FFFFFF, #ffde59, #ffde59)*/
+        }
+        .separacao {
+            display:grid;           
+            grid-template-columns: 1fr 40px 1fr;
+        }
+        .smallBox{
+            display:grid;
+            grid-template-rows:  repeat(2, 1fr) ;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #logo{
+            color: #13120f;
+            font-size: 50px;
+        }   
+        p{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 26px;
+        }
+        .cabecalioRodape {
+            text-align: center;    
+        }
+        .separacao .smallBox{
+            margin-left: 30px;
+            margin-top: 40px;          
+        }
+        img{
+            margin-left: 30px;
+            margin-top: 30px;       
+        }
+        #subtitulo,.campo {
+            text-align: center;
+        }
+        
+        fieldset{
+            border: 0;
+        }
+        input,select{
+            border-radius: 5px;
+
+        }
+        #botao{
+            position:absolute;  
+            font-size: 1em;
+            background: #ffffff;
+            border: 1;
+            margin-bottom: 1em;
+            color: #000000;
+            padding: 0.2em;
+            top:70%;
+            left:47%;
+        }
+        </style>    
+    </head>
+    <body>
+        <h1 class="cabecalioRodape"; id=logo>RESILIA</h1>
+        <h2 class="cabecalioRodape">NÓS ENSINAMOS PARA TE EMPREGAR</h2>
+            <div>
+                <p id="subtitulo">Preencha os dados abaixo que entraremos em contato!</p>
+                <br>   
+                 <form>
+                     <fieldset>
+                        <div class="campo">
+                          <label for="nome"> <strong>Nome</strong></label><br>
+                          <input type="text" name="nome" id="nome" required>
+                        </div> 
+                        <div class="campo">
+                            <label for="email"> <strong>E-mail</strong></label><br>
+                            <input type="email" name="email" id="email"required>
+                        </div>
+                        <div class="campo">
+                            <label for="telefone"> <strong>Telefone</strong> </label><br>
+                            <input type="number" name="telefone" id="telefone"required>
+                        </div>
+                        <div class="campo">
+                            <label for="dataNascimento"> <strong>Data de Nascimento</strong> </label><br>
+                            <input type="date" name="data de nascimento" id="dataNascimento" required>
+                        </div>          
+                     </fieldset>
+                     <button type="submit" id="botao">Concluído</button>
+                 </form>   
+                <br><br>
+                <h2 class="cabecalioRodape">Motivos para ser um <em>resiliente!</em></h2>
+        <div class="separacao">
+            <div class="smallBox">
+                <div><img src="imagem/ceo.png" width="200px"> </div>
+                <div><h2>Encontramos os melhores talentos brutos e transformamos em profissionais de ponta</h2></div>
+                <div><img src="imagem/ajudapc.png"width="200px" > </div>    
+                <div><h2>Valorizamos esforço acima de qualquer outra habilidade e acreditamos que todos podem aprender</h2></div>
+            </div>
+            <div></div>
+            <div class="smallBox">
+                <div><img src="imagem/grafico.png" width="200px"> </div>
+                <div><h2>Fomentamos uma comunidade que compartilha  sucesso,  só ganhamos se nossos alunos ganham</h2></div>
+                <div><img src="imagem/livro.png" width="200px"> </div>    
+                <div><h2>Buscamos promover <BR>a diversidade de pensamento e comportamento nas empresas parceiras</h2></div>
+            </div>    
+        </div>       
+        <h2 class="cabecalioRodape">A CARREIRA DOS SEUS SONHOS A 6 MESES DE DISTÂNCIA!</h2> 
+        <p class="cabecalioRodape"><strong>Redes sociais:</strong>
+            <a href="https://resilia.medium.com/">
+                <img src="imagem/medium.jpg" width="45px">   
+            </a>
+            <a href="https://www.facebook.com/resilia.br/">
+                <img src="imagem/facebook.png" width="30px">       
+            </a>
+
+            <a href="https://www.instagram.com/resilia.br/">
+                <img src="imagem/instagram.png" width="45px">     
+            </a>
+        </p>
+        
+    </body>
+</html>
